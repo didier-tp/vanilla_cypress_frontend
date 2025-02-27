@@ -6,7 +6,7 @@
 
   ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
   │ Cypress:        14.1.0                                                                         │
-  │ Browser:        Chrome 133 (headless)                                                          │
+  │ Browser:        Electron 130 (headless)                                                        │
   │ Node Version:   v22.13.1 (C:\Program Files\nodejs\node.exe)                                    │
   │ Specs:          1 found (myTest.spec.cy.js)                                                    │
   │ Searched:       C:\tp\local-git-didier-tp-repositories\vanilla_cypress_frontend\cypress\e2e\my │
@@ -20,104 +20,27 @@
 
 
   My HTML/JS Tests
-    1) good addition in calculatriceV3.html
-    2) good multiplication in calculatriceV3.html
-    3) Historique cache ou bien affiche
+    √ good addition in calculatrice.html (786ms)
+    √ good multiplication in calculatrice.html (460ms)
+    √ Historique cache ou bien affiche (653ms)
 
 
-  0 passing (7s)
-  3 failing
-
-  1) My HTML/JS Tests
-       good addition in calculatriceV3.html:
-     AssertionError: Timed out retrying after 4000ms: Expected to find content: 'calculatriceV3' but never did.
-      at Context.eval (webpack://vanilla_cypress_frontend/./cypress/e2e/myTest.spec.cy.js:8:7)
-
-  2) My HTML/JS Tests
-       good multiplication in calculatriceV3.html:
-     CypressError: `cy.visit()` failed trying to load:
-
-http://localhost:3000/calculatriceV3.html
-
-The response we received from your web server was:
-
-  > 404: Not Found
-
-This was considered a failure because the status code was not `2xx`.
-
-If you do not want status codes to cause failures pass the option: `failOnStatusCode: false`
-      at <unknown> (http://localhost:3000/__cypress/runner/cypress_runner.js:132324:76)
-      at visitFailedByErr (http://localhost:3000/__cypress/runner/cypress_runner.js:131730:12)
-      at <unknown> (http://localhost:3000/__cypress/runner/cypress_runner.js:132307:13)
-      at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:1777:23)
-      at Promise._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:1489:31)
-      at Promise._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:1546:18)
-      at Promise._settlePromise0 (http://localhost:3000/__cypress/runner/cypress_runner.js:1591:10)
-      at Promise._settlePromises (http://localhost:3000/__cypress/runner/cypress_runner.js:1667:18)
-      at _drainQueueStep (http://localhost:3000/__cypress/runner/cypress_runner.js:2377:12)
-      at _drainQueue (http://localhost:3000/__cypress/runner/cypress_runner.js:2370:9)
-      at Async._drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:2386:5)
-      at Async.drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:2256:14)
-  From Your Spec Code:
-      at Context.eval (webpack://vanilla_cypress_frontend/./cypress/e2e/myTest.spec.cy.js:36:7)
-
-  3) My HTML/JS Tests
-       Historique cache ou bien affiche:
-     CypressError: `cy.visit()` failed trying to load:
-
-http://localhost:3000/calculatriceV3.html
-
-The response we received from your web server was:
-
-  > 404: Not Found
-
-This was considered a failure because the status code was not `2xx`.
-
-If you do not want status codes to cause failures pass the option: `failOnStatusCode: false`
-      at <unknown> (http://localhost:3000/__cypress/runner/cypress_runner.js:132324:76)
-      at visitFailedByErr (http://localhost:3000/__cypress/runner/cypress_runner.js:131730:12)
-      at <unknown> (http://localhost:3000/__cypress/runner/cypress_runner.js:132307:13)
-      at tryCatcher (http://localhost:3000/__cypress/runner/cypress_runner.js:1777:23)
-      at Promise._settlePromiseFromHandler (http://localhost:3000/__cypress/runner/cypress_runner.js:1489:31)
-      at Promise._settlePromise (http://localhost:3000/__cypress/runner/cypress_runner.js:1546:18)
-      at Promise._settlePromise0 (http://localhost:3000/__cypress/runner/cypress_runner.js:1591:10)
-      at Promise._settlePromises (http://localhost:3000/__cypress/runner/cypress_runner.js:1667:18)
-      at _drainQueueStep (http://localhost:3000/__cypress/runner/cypress_runner.js:2377:12)
-      at _drainQueue (http://localhost:3000/__cypress/runner/cypress_runner.js:2370:9)
-      at Async._drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:2386:5)
-      at Async.drainQueues (http://localhost:3000/__cypress/runner/cypress_runner.js:2256:14)
-  From Your Spec Code:
-      at Context.eval (webpack://vanilla_cypress_frontend/./cypress/e2e/myTest.spec.cy.js:54:7)
-
-
+  3 passing (4s)
 
 
   (Results)
 
   ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
   │ Tests:        3                                                                                │
-  │ Passing:      0                                                                                │
-  │ Failing:      3                                                                                │
+  │ Passing:      3                                                                                │
+  │ Failing:      0                                                                                │
   │ Pending:      0                                                                                │
   │ Skipped:      0                                                                                │
-  │ Screenshots:  3                                                                                │
+  │ Screenshots:  0                                                                                │
   │ Video:        false                                                                            │
-  │ Duration:     7 seconds                                                                        │
+  │ Duration:     3 seconds                                                                        │
   │ Spec Ran:     myTest.spec.cy.js                                                                │
   └────────────────────────────────────────────────────────────────────────────────────────────────┘
-
-
-  (Screenshots)
-
-  -  C:\tp\local-git-didier-tp-repositories\vanilla_cypress_frontend\cypress\screensh     (1264x625)
-     ots\myTest.spec.cy.js\My HTMLJS Tests -- good addition in calculatriceV3.html (f               
-     ailed).png                                                                                     
-  -  C:\tp\local-git-didier-tp-repositories\vanilla_cypress_frontend\cypress\screensh     (1264x625)
-     ots\myTest.spec.cy.js\My HTMLJS Tests -- good multiplication in calculatriceV3.h               
-     tml (failed).png                                                                               
-  -  C:\tp\local-git-didier-tp-repositories\vanilla_cypress_frontend\cypress\screensh     (1264x625)
-     ots\myTest.spec.cy.js\My HTMLJS Tests -- Historique cache ou bien affiche (faile               
-     d).png                                                                                         
 
 
 ====================================================================================================
@@ -127,7 +50,7 @@ If you do not want status codes to cause failures pass the option: `failOnStatus
 
        Spec                                              Tests  Passing  Failing  Pending  Skipped  
   ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
-  │ ×  myTest.spec.cy.js                        00:07        3        -        3        -        - │
+  │ √  myTest.spec.cy.js                        00:03        3        3        -        -        - │
   └────────────────────────────────────────────────────────────────────────────────────────────────┘
-    ×  1 of 1 failed (100%)                     00:07        3        -        3        -        -  
+    √  All specs passed!                        00:03        3        3        -        -        -  
 
