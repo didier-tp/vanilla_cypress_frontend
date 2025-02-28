@@ -15,8 +15,5 @@
     "url": "https://github.com/didier-tp/vanilla_cypress_frontend/issues"
   },
   "homepage": "https://github.com/didier-tp/vanilla_cypress_frontend#readme",
-  "description": "",
-  "devDependencies": {
-    "cypress": "^14.1.0"
-  }
+  "description": ""
 }
