@@ -14,10 +14,8 @@ pipeline {
         }
 		stage('tests') {
             steps {
-			    //sh 'npm install -g lite-server'
-			    sh 'lite-server'
-				echo 'e2e cypress tests'
-				sh 'npx cypress run --spec "cypress/e2e/myTest.spec.cy.js" > test_report.txt'
+				echo 'run ic script of package.json (start-server-and-test(http-server,3000,cypress))'
+				sh 'npm run ic'
             }
         }
     }

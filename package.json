@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1" ,
+	"ic" : "start-server-and-test 'http-server -p 3000 --silent' 3000 'npx cypress run --spec ./cypress/e2e/myTest.spec.cy.js --reporter json --reporter-options output=test-report.json'"
   },
   "repository": {
     "type": "git",
