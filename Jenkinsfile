@@ -14,7 +14,7 @@ pipeline {
         }
 		stage('tests') {
             steps {
-			    sh 'npm install -g lite-server'
+			    //sh 'npm install -g lite-server'
 			    sh 'lite-server'
 				echo 'e2e cypress tests'
 				sh 'npx cypress run --spec "cypress/e2e/myTest.spec.cy.js" > test_report.txt'

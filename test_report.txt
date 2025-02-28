@@ -20,9 +20,9 @@
 
 
   My HTML/JS Tests
-    √ good addition in calculatrice.html (887ms)
-    √ good multiplication in calculatrice.html (507ms)
-    √ Historique cache ou bien affiche (808ms)
+    √ good addition in calculatrice.html (875ms)
+    √ good multiplication in calculatrice.html (483ms)
+    √ Historique cache ou bien affiche (706ms)
 
 
   3 passing (4s)
