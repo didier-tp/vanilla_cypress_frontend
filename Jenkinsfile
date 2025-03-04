@@ -1,11 +1,11 @@
 pipeline {
     agent any
     stages {
-	    stage('from_git') {
-            steps {
-                  git url : 'https://github.com/didier-tp/vanilla_cypress_frontend' , branch : 'main'
-            }
-        }
+	    //stage('from_git') {
+        //    steps {
+        //          git url : 'https://github.com/didier-tp/vanilla_cypress_frontend' , branch : 'main'
+        //    }
+        //}
         stage('npm_install') {
             steps {
 				echo 'npm install'
