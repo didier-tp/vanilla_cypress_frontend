@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    //agent any
+    //agent { label 'node' }
+    agent { label '! without-node' }
     stages {
 	    //stage('from_git') {
         //    steps {
