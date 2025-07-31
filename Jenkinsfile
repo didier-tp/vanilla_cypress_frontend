@@ -26,13 +26,5 @@ pipeline {
                 sh 'npm run ic'
             }
         }
-	stage('build_docker_image') {
-	     steps {
-		     script{ 
-			      echo 'equivalent de docker build -t m2i/appli_javascript:1 . '
-			      dockerImage = docker.build(docker_image_name)
-				  }
-			   } 
-		}
     }
 }
