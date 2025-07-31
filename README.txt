@@ -16,3 +16,5 @@ NB: * npx cypress only if cypress install as a local dev-dependency
     * start-server-and-test va démarrer un serveur , attendre que celui ci démarre , lance les tests puis arrête le serveur
     ce qui est très pratique pour de l'intégration continue
 documentation: https://www.npmjs.com/package/start-server-and-test
+
+***
