@@ -6,7 +6,7 @@ function calculerOp(op,a,b){
 	b = Number(b);
 	var res = 0;
 	if(op == '+'){
-		 res = a+b; 
+		 res = a+b+1; 
 	}else if(op == '*'){
 		 res=a*b;
 	}else{
