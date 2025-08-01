@@ -5,6 +5,12 @@ pipeline {
 		}
     }
 	environment{
+	     //NB: credential_dockerhub_didierdefrance69 is ID of credential
+		//prepared in "Admin Jenkins / Credentials / system /global"
+		dockerhub_credential_id='credential_dockerhub_didierdefrance69'
+		
+		//dockerRegistry is dockerhub
+		docker_registry= 'https://registry.hub.docker.com'
        docker_image_name='m2i/appli_javascript:1'
     }
     stages {
@@ -33,6 +39,17 @@ pipeline {
 			      dockerImage = docker.build(docker_image_name)
 				  }
 			   } 
+		}
+	stage('push_docker_image') {
+            steps {
+			  script{
+					echo "docker_registry=" + docker_registry
+					echo "dockerhub_credential_id=" +dockerhub_credential_id
+					docker.withRegistry( docker_registry, dockerhub_credential_id ) { 
+					     dockerImage.push() 
+						 }
+					  }
+				  }
 		}
     }
 }
