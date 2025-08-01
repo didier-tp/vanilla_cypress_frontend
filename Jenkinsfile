@@ -11,7 +11,7 @@ pipeline {
 		
 		//dockerRegistry is dockerhub
 		docker_registry= 'https://registry.hub.docker.com'
-       docker_image_name='didierdefrance69/appli_javascript:1'
+       docker_image_name='didierdefrance69/appli_javascript:2'
     }
     stages {
      //stage('from_git') { 
