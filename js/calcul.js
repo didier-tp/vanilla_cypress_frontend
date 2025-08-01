@@ -11,3 +11,9 @@ function calculerOp(op,a,b){
 	}
 	return res;
 }	
+
+try{
+    module.exports = { calculerOp };
+}catch(e) {
+	//console.log("normal error , module.exports just for unit test (via jest)")
+}
