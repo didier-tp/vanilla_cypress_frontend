@@ -18,3 +18,8 @@ NB: * npx cypress only if cypress install as a local dev-dependency
 documentation: https://www.npmjs.com/package/start-server-and-test
 
 ***
+
+pour partie test unitaires basés sur jest:
+----------------------------------------
+npm install -g jest 
+npm run test
